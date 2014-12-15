@@ -1,0 +1,29 @@
+{
+  "name": "mobi.ui.equals",
+  "version": "0.0.0",
+  "description": "angular module providing EqualsService",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loet/mobi.ui.equals.git"
+  },
+  "author": "U110730 <ueli.loetscher@mobi.ch>",
+  "license": "N/A",
+  "bugs": {
+    "url": "https://github.com/loetmobi.ui.equals/issues"
+  },
+  "homepage": "https://github.com/loet/mobi.ui.equals",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "karma": "~0.12.28",
+    "grunt-karma": "~0.9.0",
+    "grunt-contrib-concat": "~0.5.0",
+    "jasmine-core": "~2.1.3",
+    "karma-jasmine": "~0.3.2",
+    "karma-phantomjs-launcher": "~0.1.4",
+    "karma-chrome-launcher": "~0.1.7"
+  }
+}
