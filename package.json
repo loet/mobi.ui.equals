@@ -1,6 +1,6 @@
 {
   "name": "mobi.ui.equals",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "angular module providing EqualsService",
   "main": "Gruntfile.js",
   "scripts": {

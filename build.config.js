@@ -4,8 +4,6 @@ module.exports.config = {
         'src/**/*.js', '!src/**/*.spec.js'
     ],
 
-    dest: 'dist/lodashadapter.js',
-
     bower_components: [
         'bower_components/lodash/dist/lodash.js',
         'bower_components/angular/angular.js',

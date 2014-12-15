@@ -1,15 +1,20 @@
 module.exports = function (grunt) {
 
+    var options, pkg, destinationFile;
+
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-karma');
 
     // load build config
-    var options = require('./build.config');
+    options = require('./build.config');
     // initialize loaded configs
     grunt.initConfig(options);
 
+    pkg = grunt.file.readJSON('package.json');
+    destinationFile = 'dist/' + pkg.name + '.js';
+
     grunt.config.merge({
-        pkg: grunt.file.readJSON('package.json'),
+        pkg: pkg,
         concat: {
             options: {
                 stripBanners: true,
@@ -17,7 +22,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 src: '<%= config.src %>',
-                dest: '<%= config.dest %>'
+                dest: destinationFile
             }
         },
 
@@ -26,7 +31,7 @@ module.exports = function (grunt) {
                 options: {
                     files: [
                         '<%= config.bower_components %>',
-                        '<%= config.dest %>',
+                        destinationFile,
                         'src/**/*.spec.js'
                     ]
                 },
