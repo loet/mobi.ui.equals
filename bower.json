@@ -12,6 +12,6 @@
     "lodash": "2.4.1",
     "angular": "1.2.21",
     "angular-mocks": "1.2.21",
-    "mobi.ui.lodashadapter": "https://github.com/loet/mobi.ui.lodashadapter.git#0.0.1"
+    "mobi.ui.lodashadapter": "https://github.com/loet/mobi.ui.lodashadapter.git#0.0.2"
   }
 }

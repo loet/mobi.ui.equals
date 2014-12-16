@@ -1,4 +1,4 @@
-/* mobi.ui.equals - v0.0.3 - 2014-12-15 */
+/* mobi.ui.equals - v0.0.3 - 2014-12-16 */
 
 angular.module('mobi.ui.equals', [
     'mobi.ui.equals.services',
